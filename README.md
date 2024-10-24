@@ -18,7 +18,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const monitor = new VisitMonitor({
-            apiUrl: '自己部署的api地址',
+            apiUrl: '自己部署的api地址/api/log-visit',
         });
 
         monitor.onUpdate((pv, uv) => {
@@ -65,7 +65,7 @@ const uvCount = ref();
 
 onMounted(() => {
     const monitor = new VisitMonitor({
-        apiUrl: "自己部署的api地址",
+        apiUrl: "自己部署的api地址/api/log-visit",
     });
 
     monitor.onUpdate((pv, uv) => {
@@ -99,7 +99,7 @@ const VisitCounter = () => {
 
     useEffect(() => {
         const monitor = new VisitMonitor({
-            apiUrl: '自己部署的api地址',
+            apiUrl: '自己部署的api地址/api/log-visit',
         });
 
         monitor.onUpdate((pv, uv) => {
